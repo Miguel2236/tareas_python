@@ -14,8 +14,6 @@ p5 = [7.7]
 
 def calcular(p1,p2,p3,p4,p5):
 
-    eMsg = ''
-
     #b1 = (y1 - y0)/(x1 - x0)
 
     b1 = (p2[1] - p1[1])/(p2[0] - p1[0])
@@ -32,9 +30,7 @@ def calcular(p1,p2,p3,p4,p5):
 
     y = p1[1] + b1*(p5[0] - p1[0]) + b2*(p5[0] - p1[0])*(p5[0] - p2[0]) + b3*(p5[0] - p1[0])*(p5[0] - p2[0])*(p5[0] - p3[0])
 
-    eMsg = "b1 = ",b1, ", b2 =",b2, ", b3 =",b3,", y = ",y
-
-    return eMsg
+    print("b1 = ",b1, ", b2 =",b2, ", b3 =",b3,", y = ",y)
 
 
 print(calcular(p1,p2,p3,p4,p5))
