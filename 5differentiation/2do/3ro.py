@@ -1,6 +1,6 @@
 #
 # 3ro
-# Diferencias FInitas centradas
+# Diferencias Finitas centradas
 
 from math import sin
 
