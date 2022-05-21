@@ -2,6 +2,9 @@
 # select and write 
 # one of the following stat functions
 #
+import numpy
+
+import statistics as stats
 
 def sum(lst):
     res = 0
@@ -14,17 +17,26 @@ def avg(l):
     avg = sum(l) / len(l)
     print("El promedio es: ",avg)
 
-def min(l): pass
+def minimo(l):
+    x = min(l)
+    print(x)
 
-def max(l): pass
 
-def range(l):
-    for x in range(l):
-        print(x)
+def maximo(l):
+    print (max(l))
 
-def std(l): pass
+def rango():
+    x = range(3,10)
+    for n in x:
+        print(n)
 
-def mode(l): pass
+def std(l):
+    stand = numpy.std(l)
+    print(stand)
+
+def mode(l):
+    x = stats.mode(l)
+    print("mode es: ",x)
 
 
 lst = [1,5,10,11,2]
@@ -33,9 +45,11 @@ sum(lst)
 
 avg(lst)
 
-min(lst)
+minimo(lst)
 
-#range(20)
+maximo(lst)
+
+rango()
 
 std(lst)
 

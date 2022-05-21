@@ -1,7 +1,7 @@
 #
-# generate a function to produce points 
+# generate a function to produce points
 # to be used as x-axis
-# 
+#
 # INPUT
 # -> a initial point
 # -> b final point
